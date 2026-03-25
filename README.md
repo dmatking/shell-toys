@@ -1,22 +1,10 @@
 # ShellToys
-Interesting or ridiculously over-engineered command-line scripts. 
+Interesting or ridiculously over-engineered command-line scripts.
 
-I wrote these in the script language versions below. Functionality may be a little different in each scripting language.
-
-* PowerShell: 7.4.0 Core
-* Bash: GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
-* Python: 
-  * Linux: Python 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0] on linux
-  * Windows: Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)] on win32
-* Windows Terminal: Version: 1.18.2822.0
-* git: version 2.43.0.windows.1
-* git: version 2.39.2 raspberry pi OS
-  
 ---
 
-* **Git Config Super Listing** - A color-coded listing of the git configuration properties for each environment (system, global, local) as well as an effective properties section. The effective properties section will show properties in the color of the environment from which they come or from which they are overridden. [Screenshot](images/gitconfigsuperlist.png)
+**Git Config Super Listing** - Color-coded listing of git configuration at system, global, and local scope, plus an effective configuration section showing which scope wins for each key. Available in Python, Bash, and PowerShell. Also includes a `git configs` alias for a quick no-frills dump of all three tiers.
 
-* **Windows Terminal Multiple Launch** - Launch 2 or 4 pane windows terminal from command line, execute the given commands. Examples are for ssh to multiple machines and running htop. Handy if you need to monitor multiple servers.
+**Split Env** - Splits a path-style environment variable into one entry per line with optional search filtering. Available for Windows (CMD) and Linux (Bash).
 
-
-
+**Windows Terminal Multiple Launch** - Launch a 2 or 4 pane Windows Terminal from the command line and run commands in each pane. Examples use SSH + htop for monitoring multiple servers.
