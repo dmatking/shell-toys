@@ -1,4 +1,1 @@
-// An alias for git to produce a list similar to the other git config scripts without the override logic
-// Set the environment to your preffered location
-
-git config --global alias.configs "!echo System: && git config --system -l && echo --- && echo Global: && git config --global -l && echo --- && echo Local: && git config --local -l"
+git config --global alias.configs '!echo "System:" && git config --system -l && echo "---" && echo "Global:" && git config --global -l && echo "---" && echo "Local:" && git config --local -l'
